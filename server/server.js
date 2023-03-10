@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 app.use(cors({origin: true, credentials: true}));
 
-const stripe = require('stripe')('sk_test_51MWhGWI5bYMqrrjftUxc0JoCqU3ZzJtOOLJjp0eyJ1SKOrcuU5ia0dT8wjohpaZQRRXD62LDKSSw7b9z0S6l9Ttr00nYCOHdXV');
+const stripe = require('stripe')(process.env.STRIPE_KEY);
 
 
 
